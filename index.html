@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>AYR - 2.0</title>
+</head>
+<body>
+<div class="navigation">
+	<div class="dropdown_menu">
+		<img src="./images/icons/menu.svg" alt="menu button" id="show-menu">
+	</div>
+	<div class="nav_logo">
+		<img src="./images/full_logo.png" alt="logo" class="logo">
+		<p>...at your request</p>
+	</div>
+
+	<ul class="menu">
+		<li class="nav_item"><a href="#banner">Home</a></li>
+		<li class="nav_item"><a href="#business-model">Business Model</a></li>
+		<li class="nav_item"><a href="#bullet-points">Advantages</a></li>
+		<li class="nav_item"><a href="#app">Application</a></li>
+	</ul>
+</div>
+<div class="main_banner">
+	<div class="images">
+		<img src="images/1.jpg" alt="private jet" class="active">
+		<img src="images/card_2.jpg" alt="private jet">
+	</div>
+	<div class="main_content">
+		<div class="arrows">
+			<div class="arrow_left">
+				<a href="#">
+					<img src="./images/icons/back.svg" alt="back arrow" class="arrow back_arrow">
+				</a>
+			</div>
+			<div class="arrow_right">
+				<a href="#">
+					<img src="./images/icons/next.svg" alt="next arrow" class="arrow next_arrow">
+				</a>
+			</div>
+		</div>
+		<div class="content">
+			<div class="text">
+				<p>Finally, an on-demand private jet option that won’t break the bank and won’t require a subscription!</p>
+				<button class="learn_more btn-large">Learn more</button>
+			</div>
+		</div>
+		<div class="form">
+			<form action="#">
+				<h2>Interested?</h2>
+				<p>Let's keep in touch</p>
+				<label for="name">Full Name</label>
+				<input type="text" id="name" placeholder="Your name" pattern="[A-Za-z]{,30}" required>
+				<label for="email">Email</label>
+				<input type="email" id="email" placeholder="Email" required>
+				<button type="submit" class="btn-large">Submit</button>
+			</form>
+		</div>
+	</div>
+</div>
+<div class="how_it_works">
+	<div class="items container">
+		<div class="item_1 item">
+			<h2><img src="./images/icons/dollar.svg" alt="dollar sign"></h2>
+			<h5 class="title">Low Cost Carrier Model</h5>
+			<p class="text">By operating only one type of aircraft, flying out of underutilized regional airports, and focusing on short-haul routes, we can offer best-in-class value to our target demographic – much in the same way Southwest does for their target demographic</p>
+		</div>
+		<div class="item_2 item">
+			<h2><img src="./images/icons/time.svg" alt="dollar sign"></h2>
+			<h5 class="title">Flexible Pooling Platform</h5>
+			<p class="text">Why charter a whole plane if you only need one seat? At AYR, the customer books and pays for only the seat(s) they need, sets a departure time that best fits their schedule then we take care of the rest. AYR matches customers with similar travel schedules</p>
+		</div>
+		<div class="item_3 item">
+			<h2><img src="./images/icons/finger.svg" alt="dollar sign"></h2>
+			<h5 class="title">Dynamic, Non-Subscription, Pricing Model</h5>
+			<p class="text">We quote prices based on the probability of achieving 100% load factor</p>
+		</div>
+	</div>
+</div>
+</body>
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="./js/main.js"></script>
+</html>

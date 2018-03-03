@@ -12,8 +12,7 @@ a {
   outline: 0; }
 
 .container {
-  width: 80%;
-  margin: 0 auto; }
+  padding: 60px 10%; }
 
 .max_width_container {
   height: 100%;
@@ -200,7 +199,8 @@ a {
     .main_banner .main_content .content {
       display: flex;
       flex-direction: column;
-      justify-content: flex-end; }
+      justify-content: flex-end;
+      overflow: hidden; }
       .main_banner .main_content .content .text {
         width: 80%;
         background-color: rgba(42, 46, 66, 0.65);
@@ -264,15 +264,153 @@ a {
         .main_banner .main_content .form form .btn-large {
           margin-top: 50px; }
 
-.how_it_works .items {
-  display: flex;
-  justify-content: space-between; }
-  .how_it_works .items .item {
+.how_it_works {
+  background-color: #2A2E42;
+  color: #FFFFFF; }
+  .how_it_works .items {
     display: flex;
-    flex-direction: column;
-    margin: 0 20px;
-    max-width: 400px; }
-    .how_it_works .items .item h2 img {
-      width: 90px; }
-    .how_it_works .items .item .title {
-      flex: 0 1 auto; }
+    justify-content: space-between; }
+    .how_it_works .items .item {
+      display: flex;
+      flex-direction: column;
+      margin: 0 20px;
+      max-width: 400px; }
+      .how_it_works .items .item h2 {
+        text-align: center;
+        margin: 20px 0; }
+        .how_it_works .items .item h2 img {
+          width: 90px; }
+      .how_it_works .items .item .title {
+        font-size: 1.4rem;
+        min-height: 80px;
+        font-weight: bold;
+        margin: 0;
+        text-align: center; }
+      .how_it_works .items .item .text {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        font-style: italic;
+        font-weight: lighter; }
+
+.bullet-points .bullet-point {
+  position: relative;
+  height: 600px;
+  background-size: cover;
+  overflow: auto;
+  max-width: 1800px;
+  margin: 0 auto; }
+  @media screen and (max-width: 480px) {
+    .bullet-points .bullet-point {
+      height: auto; } }
+  .bullet-points .bullet-point h1 {
+    flex: 0 1 auto;
+    font-size: 4rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    position: absolute;
+    top: 40px;
+    z-index: 10;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 4px;
+    color: #5d5d5d;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.16), 0 2px 4px rgba(0, 0, 0, 0.3); }
+    @media screen and (max-width: 1024px) {
+      .bullet-points .bullet-point h1 {
+        top: 45%;
+        font-size: 4rem; } }
+    @media screen and (max-width: 480px) {
+      .bullet-points .bullet-point h1 {
+        top: 210px;
+        font-size: 1.8rem;
+        line-height: 2.5rem; } }
+  .bullet-points .bullet-point .content-wrapper {
+    height: 100%; }
+    .bullet-points .bullet-point .content-wrapper .container-content {
+      position: relative;
+      height: 100%;
+      width: 50%;
+      background-color: #ffffff;
+      color: #5d5d5d;
+      padding: 200px 40px 40px;
+      font-weight: 300;
+      font-size: 2rem;
+      line-height: 3rem;
+      font-style: italic; }
+      @media screen and (max-width: 1024px) {
+        .bullet-points .bullet-point .content-wrapper .container-content {
+          width: 100%;
+          height: 55%;
+          top: 45%; } }
+      @media screen and (max-width: 480px) {
+        .bullet-points .bullet-point .content-wrapper .container-content {
+          padding: 300px 40px 40px;
+          min-height: 640px;
+          font-size: 1.3rem;
+          line-height: 2rem;
+          top: auto;
+          background-color: inherit; } }
+      .bullet-points .bullet-point .content-wrapper .container-content hr {
+        border: none;
+        border-bottom: 1px solid #dedede;
+        width: 30%;
+        margin: 0 auto; }
+
+.bullet-points .bullet-point:nth-child(odd) {
+  background: url("../images/card_2.jpg") no-repeat center center; }
+  .bullet-points .bullet-point:nth-child(odd) h1 {
+    left: 40px; }
+    @media screen and (max-width: 1024px) {
+      .bullet-points .bullet-point:nth-child(odd) h1 {
+        left: 40px;
+        right: auto; } }
+  .bullet-points .bullet-point:nth-child(odd) .content-wrapper {
+    background: linear-gradient(90deg, #fff 50%, transparent); }
+    @media screen and (max-width: 1024px) {
+      .bullet-points .bullet-point:nth-child(odd) .content-wrapper {
+        background: linear-gradient(180deg, transparent, #fff 40%); } }
+    .bullet-points .bullet-point:nth-child(odd) .content-wrapper .container-content {
+      float: left; }
+      @media screen and (max-width: 1024px) {
+        .bullet-points .bullet-point:nth-child(odd) .content-wrapper .container-content {
+          float: none; } }
+      @media screen and (max-width: 480px) {
+        .bullet-points .bullet-point:nth-child(odd) .content-wrapper .container-content {
+          float: initial; } }
+      .bullet-points .bullet-point:nth-child(odd) .content-wrapper .container-content img {
+        position: absolute;
+        width: 80px;
+        bottom: 50px;
+        left: 50px;
+        opacity: 0.5; }
+        @media screen and (max-width: 1024px) {
+          .bullet-points .bullet-point:nth-child(odd) .content-wrapper .container-content img {
+            display: none; } }
+
+.bullet-points .bullet-point:nth-child(even) {
+  background: url("../images/card_2.jpg") no-repeat center center; }
+  .bullet-points .bullet-point:nth-child(even) h1 {
+    right: 40px; }
+    @media screen and (max-width: 1024px) {
+      .bullet-points .bullet-point:nth-child(even) h1 {
+        left: 40px;
+        right: auto; } }
+  .bullet-points .bullet-point:nth-child(even) .content-wrapper {
+    background: linear-gradient(90deg, transparent, #fff 50%); }
+    @media screen and (max-width: 1024px) {
+      .bullet-points .bullet-point:nth-child(even) .content-wrapper {
+        background: linear-gradient(180deg, transparent, #fff 40%); } }
+    .bullet-points .bullet-point:nth-child(even) .content-wrapper .container-content {
+      float: right; }
+      @media screen and (max-width: 480px) {
+        .bullet-points .bullet-point:nth-child(even) .content-wrapper .container-content {
+          float: initial; } }
+      .bullet-points .bullet-point:nth-child(even) .content-wrapper .container-content img {
+        position: absolute;
+        width: 80px;
+        bottom: 50px;
+        right: 50px;
+        opacity: 0.5; }
+        @media screen and (max-width: 1024px) {
+          .bullet-points .bullet-point:nth-child(even) .content-wrapper .container-content img {
+            display: none; } }

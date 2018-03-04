@@ -414,3 +414,77 @@ a {
         @media screen and (max-width: 1024px) {
           .bullet-points .bullet-point:nth-child(even) .content-wrapper .container-content img {
             display: none; } }
+
+.app {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  height: 100vh;
+  padding: 70px 5%; }
+  @media screen and (max-width: 480px) {
+    .app {
+      height: auto; } }
+  .app .container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto; }
+    @media screen and (max-width: 480px) {
+      .app .container {
+        flex-direction: column; } }
+    .app .container .route {
+      height: 560px;
+      max-width: 50%;
+      position: relative; }
+      @media screen and (max-width: 480px) {
+        .app .container .route {
+          height: auto;
+          max-width: 100%;
+          margin-bottom: 40px; } }
+      .app .container .route h1 {
+        margin: 0;
+        font-size: 3rem;
+        font-weight: normal;
+        font-family: 'Playfair Display', serif;
+        letter-spacing: 4px;
+        color: #5d5d5d;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.16), 0 2px 4px rgba(0, 0, 0, 0.3); }
+        @media screen and (max-width: 480px) {
+          .app .container .route h1 {
+            font-size: 2rem;
+            text-align: center; } }
+      .app .container .route img {
+        display: block;
+        height: 60%;
+        margin: 20% auto; }
+        @media screen and (max-width: 480px) {
+          .app .container .route img {
+            display: none; } }
+    .app .container .our_app {
+      width: 395px;
+      position: relative; }
+      @media screen and (max-width: 480px) {
+        .app .container .our_app {
+          width: auto; } }
+      .app .container .our_app .our_app-img {
+        width: 315px;
+        margin: 0 auto; }
+        .app .container .our_app .our_app-img img {
+          height: 560px;
+          margin: 0 auto;
+          transition: .3s; }
+          .app .container .our_app .our_app-img img:hover {
+            cursor: pointer;
+            transform: scale(1.05); }
+
+footer {
+  background-color: #a87f74;
+  height: 70px; }
+  footer p {
+    color: #ffffff;
+    line-height: 70px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.16); }

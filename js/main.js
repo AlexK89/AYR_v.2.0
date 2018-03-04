@@ -1,10 +1,11 @@
 'use strict';
 
 // Main carousel
-var mainArrows = document.querySelectorAll('.main_banner .arrow');
+var mainArrows = document.querySelectorAll('.arrow');
 var mainBackgroundImages = document.querySelectorAll('.main_banner .images img');
 var indexOfMainBackgroundImages = mainBackgroundImages.length - 1;
 var mainCarouselCounter = 0;
+var appPageCounter = 0;
 
 var _loop = function _loop(item) {
 	item.addEventListener('click', function () {

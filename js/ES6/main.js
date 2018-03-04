@@ -1,8 +1,9 @@
 // Main carousel
-const mainArrows = document.querySelectorAll('.main_banner .arrow');
+const mainArrows = document.querySelectorAll('.arrow');
 const mainBackgroundImages = document.querySelectorAll('.main_banner .images img');
 const indexOfMainBackgroundImages = mainBackgroundImages.length - 1;
 let mainCarouselCounter = 0;
+let appPageCounter = 0;
 
 for (let item of mainArrows) {
 	item.addEventListener('click', () => {

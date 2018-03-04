@@ -463,21 +463,45 @@ a {
           .app .container .route img {
             display: none; } }
     .app .container .our_app {
+      display: flex;
+      justify-content: center;
       width: 395px;
       position: relative; }
       @media screen and (max-width: 480px) {
         .app .container .our_app {
           width: auto; } }
+      .app .container .our_app .arrow {
+        position: absolute;
+        top: calc(50% - 15px);
+        right: 5px;
+        height: 30px;
+        transition: .3s; }
+        .app .container .our_app .arrow.back_arrow {
+          right: initial;
+          left: 5px;
+          transform: rotate(180deg); }
+          .app .container .our_app .arrow.back_arrow:active {
+            transform: rotate(180deg) scale(0.9); }
+        .app .container .our_app .arrow:active {
+          transform: scale(0.9); }
       .app .container .our_app .our_app-img {
-        width: 315px;
-        margin: 0 auto; }
-        .app .container .our_app .our_app-img img {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        width: 315px; }
+        .app .container .our_app .our_app-img .phone_skin {
           height: 560px;
           margin: 0 auto;
-          transition: .3s; }
-          .app .container .our_app .our_app-img img:hover {
-            cursor: pointer;
-            transform: scale(1.05); }
+          transition: .3s;
+          z-index: 10; }
+        .app .container .our_app .our_app-img .img {
+          display: none;
+          position: absolute;
+          top: 66px;
+          left: 38px;
+          width: 241px; }
+          .app .container .our_app .our_app-img .img.active {
+            display: block; }
 
 footer {
   background-color: #a87f74;

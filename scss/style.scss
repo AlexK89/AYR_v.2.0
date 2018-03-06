@@ -54,7 +54,7 @@ a {
 }
 
 .container {
-	padding: 60px 10%;
+	padding: 60px 5%;
 }
 
 .max_width_container {
@@ -684,17 +684,21 @@ a {
 
 				}
 				.our_app-img {
-					height: 100%;
+					position: relative;
+					margin: 68px auto;
+					width: 241px;
+					height: calc(100% - 136px);
 
 					img {
-						display: none;
-						margin: 68px auto;
+						position: absolute;
+						top: 0;
+						left: 0;
 						width: 241px;
-						animation: fadeOut .8s forwards;
+						animation: fadeOut 1s forwards;
 
 						&.active {
-							display: block;
-							animation: fadeIn .8s forwards;
+							//display: block;
+							animation: fadeIn 1s forwards;
 						}
 					}
 				}

@@ -1,3 +1,27 @@
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes slideIn {
+  0% {
+    left: 100%; }
+  100% {
+    left: 0; } }
+
+@keyframes slideOut {
+  0% {
+    left: 0; }
+  100% {
+    left: -100%; } }
+
 * {
   box-sizing: border-box;
   outline: none; }
@@ -32,67 +56,33 @@ a {
   .btn-large:hover, .btn-large:focus {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
 
-.arrows {
+.left_arrow,
+.right_arrow {
   position: absolute;
-  width: 80px;
-  height: 40px;
-  min-width: 80px;
-  min-height: 40px;
+  z-index: 20;
   top: 100px;
-  left: 40px;
-  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22); }
-
-.arrow_left,
-.arrow_right {
   float: left;
   display: inline-block;
+  margin: 0;
   width: 40px;
   height: 40px;
   min-width: 40px;
   min-height: 40px;
-  background-color: rgba(42, 46, 66, 0.65); }
-  .arrow_left a,
-  .arrow_right a {
-    display: inline-block;
-    width: 100%;
-    height: 100%; }
-    .arrow_left a:active img,
-    .arrow_right a:active img {
-      transform: scale(0.8); }
-    .arrow_left a img,
-    .arrow_right a img {
-      width: 24px;
-      transition: .3s; }
-      .arrow_left a img.back_arrow,
-      .arrow_right a img.back_arrow {
-        margin: 8px 5px; }
-      .arrow_left a img.next_arrow,
-      .arrow_right a img.next_arrow {
-        margin: 8px 10px; }
-
-@keyframes fadeOut {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@keyframes slideIn {
-  0% {
-    left: 100%; }
-  100% {
-    left: 0; } }
-
-@keyframes slideOut {
-  0% {
-    left: 0; }
-  100% {
-    left: -100%; } }
+  background-color: rgba(42, 46, 66, 0.65);
+  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22); }
+  .left_arrow:active img,
+  .right_arrow:active img {
+    transform: scale(0.8); }
+  .left_arrow img,
+  .right_arrow img {
+    width: 24px;
+    transition: .3s; }
+    .left_arrow img.back_arrow,
+    .right_arrow img.back_arrow {
+      margin: 8px 5px; }
+    .left_arrow img.next_arrow,
+    .right_arrow img.next_arrow {
+      margin: 8px 10px; }
 
 .navigation {
   height: 70px;
@@ -167,23 +157,6 @@ a {
   overflow: hidden;
   padding-top: 70px;
   color: #5d5d5d; }
-  .main_banner .images {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    overflow: hidden; }
-    .main_banner .images img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      min-width: 100%;
-      height: 100%;
-      animation: slideOut 1s forwards; }
-      .main_banner .images img.active {
-        display: block;
-        animation: slideIn 1s forwards; }
   .main_banner .main_content {
     display: flex;
     justify-content: space-between;
@@ -192,11 +165,36 @@ a {
     left: 0;
     height: 100%;
     width: 100%; }
-    .main_banner .main_content .arrow_left {
-      border-right: 1px solid #ffffff; }
-    .main_banner .main_content .arrow_right {
-      border-left: 1px solid rgba(42, 46, 66, 0.65); }
+    .main_banner .main_content .carousel {
+      position: absolute;
+      width: 100%;
+      height: 100%; }
+      .main_banner .main_content .carousel .left_arrow {
+        left: 40px;
+        border-right: 1px solid #ffffff; }
+      .main_banner .main_content .carousel .right_arrow {
+        left: 80px;
+        border-left: 1px solid rgba(42, 46, 66, 0.65); }
+      .main_banner .main_content .carousel .images {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        overflow: hidden; }
+        .main_banner .main_content .carousel .images img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          min-height: 100%;
+          animation: fadeOut 1s forwards; }
+          .main_banner .main_content .carousel .images img.active {
+            display: block;
+            animation: fadeIn 1s forwards; }
     .main_banner .main_content .content {
+      z-index: 15;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
@@ -216,6 +214,7 @@ a {
           width: 250px;
           margin: 20px 0 0; }
     .main_banner .main_content .form {
+      z-index: 15;
       display: flex;
       max-width: 470px;
       flex-direction: column;

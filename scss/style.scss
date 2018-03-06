@@ -82,41 +82,6 @@ a {
 	}
 }
 
-//Arrows
-
-.left_arrow,
-.right_arrow {
-	position: absolute;
-	z-index: 20;
-	top: 100px;
-	float: left;
-	display: inline-block;
-	margin: 0;
-	width: 40px;
-	height: 40px;
-	min-width: 40px;
-	min-height: 40px;
-	background-color: rgba(42, 46, 66, 0.65);
-	box-shadow: 0 7px 14px rgba(0, 0, 0, 0.25),
-	0 5px 5px rgba(0, 0, 0, 0.22);
-
-	&:active img {
-		transform: scale(0.8);
-	}
-	img {
-		width: 24px;
-		transition: .3s;
-
-		&.back_arrow {
-			margin: 8px 5px;
-		}
-
-		&.next_arrow {
-			margin: 8px 10px;
-		}
-	}
-}
-
 //Navigation bar
 
 .navigation {
@@ -233,16 +198,48 @@ a {
 			width: 100%;
 			height: 100%;
 
-				.left_arrow {
-					left: 40px;
-					border-right: 1px solid #ffffff;
-				}
+			.left_arrow,
+			.right_arrow {
+				position: absolute;
+				z-index: 20;
+				top: 100px;
+				float: left;
+				display: inline-block;
+				margin: 0;
+				width: 40px;
+				height: 40px;
+				min-width: 40px;
+				min-height: 40px;
+				background-color: rgba(42, 46, 66, 0.65);
+				box-shadow: 0 7px 14px rgba(0, 0, 0, 0.25),
+				0 5px 5px rgba(0, 0, 0, 0.22);
 
-				.right_arrow {
-					left: 80px;
-					border-left: 1px solid rgba(42, 46, 66, 0.65);
+				&:active img {
+					transform: scale(0.8);
 				}
+				img {
+					width: 24px;
+					transition: .3s;
+				}
+			}
 
+			.left_arrow {
+				left: 40px;
+				border-right: 1px solid #ffffff;
+
+				img {
+					margin: 8px 5px;
+				}
+			}
+
+			.right_arrow {
+				left: 80px;
+				border-left: 1px solid rgba(42, 46, 66, 0.65);
+
+				img {
+					margin: 8px 10px;
+				}
+			}
 
 			.images {
 				position: absolute;
@@ -648,48 +645,57 @@ a {
 				width: auto;
 			}
 
-			.arrow {
-				position: absolute;
-				top: calc(50% - 15px);
-				right: 5px;
-				height: 30px;
+			.phone_skin {
+				height: 560px;
+				margin: 0 auto;
 				transition: .3s;
-
-				&.back_arrow {
-					right: initial;
-					left: 5px;
-					transform: rotate(180deg);
-
-					&:active {
-						transform: rotate(180deg) scale(0.9);
-					}
-				}
-
-				&:active {
-					transform: scale(0.9);
-				}
+				z-index: 10;
 			}
-			.our_app-img {
-				display: flex;
-				position: relative;
-				justify-content: center;
-				width: 315px;
+			.carousel {
+				position: absolute;
+				width: 100%;
+				height: 100%;
 
-				.phone_skin {
-					height: 560px;
-					margin: 0 auto;
-					transition: .3s;
-					z-index: 10;
-				}
-				.img {
-					display: none;
+				.carousel__arrows {
 					position: absolute;
-					top: 66px;
-					left: 38px;
-					width: 241px;
+					top: calc(50% - 15px);
+					height: 30px;
+					transition: .3s;
 
-					&.active {
-						display: block;
+					img {
+						height: 30px;
+					}
+					&.left_arrow {
+						left: 5px;
+						transform: rotate(180deg);
+
+						&:active {
+							transform: rotate(180deg) scale(0.9);
+						}
+					}
+
+					&.right_arrow {
+						right: 5px;
+
+						&:active {
+							transform: scale(0.9);
+						}
+					}
+
+				}
+				.our_app-img {
+					height: 100%;
+
+					img {
+						display: none;
+						margin: 68px auto;
+						width: 241px;
+						animation: fadeOut .8s forwards;
+
+						&.active {
+							display: block;
+							animation: fadeIn .8s forwards;
+						}
 					}
 				}
 			}

@@ -35,6 +35,13 @@ body {
 a {
   outline: 0; }
 
+.shadow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 0; }
+
 .navigation {
   position: fixed;
   z-index: 100;
@@ -124,12 +131,6 @@ a {
   width: 100vw;
   background: url("../images/main_img.jpg") no-repeat center center fixed;
   background-size: cover; }
-  .main_banner .shadow {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 0; }
   .main_banner .container {
     position: relative;
     display: flex;
@@ -202,7 +203,7 @@ a {
       line-height: 2em; }
 
 .how_it_works {
-  min-height: 100vh;
+  min-height: calc(100vh - 80px);
   padding: 100px 5%; }
   @media screen and (max-width: 480px) {
     .how_it_works {
@@ -295,6 +296,62 @@ a {
           animation: fadeOut 1s forwards; }
           .how_it_works .our_app .carousel .our_app-img img.active {
             animation: fadeIn 1s forwards; }
+
+.advantages {
+  position: relative;
+  height: 100vh;
+  overflow: hidden; }
+  .advantages .carousel__arrows {
+    margin: 0;
+    position: absolute;
+    height: 100%;
+    width: 50px;
+    background: rgba(98, 180, 78, 0.9);
+    color: #ffffff;
+    z-index: 15;
+    top: 0; }
+    .advantages .carousel__arrows.left_arrow {
+      left: 0; }
+    .advantages .carousel__arrows.right_arrow {
+      right: 0; }
+  .advantages__items {
+    width: 100%;
+    height: 100%;
+    position: relative; }
+    .advantages__items__item {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      animation: slideOut 1s forwards;
+      overflow: hidden; }
+      .advantages__items__item.active {
+        animation: slideIn 1s forwards; }
+      .advantages__items__item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+      .advantages__items__item__content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0 5%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .advantages__items__item__content__title {
+          color: #ffffff;
+          font-size: 3em;
+          letter-spacing: 0.125em;
+          margin-bottom: 0; }
+        .advantages__items__item__content__sub-title {
+          max-width: 700px;
+          text-align: center;
+          color: #ffffff; }
 
 footer {
   background-color: #a87f74;

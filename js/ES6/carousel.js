@@ -19,7 +19,7 @@ function changeImage(arrow) {
 }
 
 function switchCarouselImage(carouselArrow, direction) {
-	const carouselImages = carouselArrow.parentNode.parentNode.querySelectorAll('.images img');
+	const carouselImages = carouselArrow.parentNode.querySelectorAll('.items .item');
 
 	for (let i = 0; i < carouselImages.length; i++) {
 		if (carouselImages[i].classList.contains('active')) {

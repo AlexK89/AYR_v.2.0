@@ -46,7 +46,7 @@ body {
 	margin: 0;
 	font-size: 14px;
 	font-size: 1em;
-	font-family: 'Playfair Display', serif;
+	font-family: 'Montserrat', serif;
 }
 
 a {
@@ -82,7 +82,7 @@ a {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		width: 285px;
+		width: 295px;
 		padding: 0 30px;
 
 		img {
@@ -262,14 +262,17 @@ a {
 	&__details {
 		width: 100%;
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
+		align-items: center;
 		background-color: #25282d;
 		color: #ffffff;
+		padding: 4em 0;
 
 		p {
 			width: 90%;
+			margin: 0;
 			max-width: 1200px;
-			padding: 3.125em 0;
 			text-align: center;
 			line-height: 2em;
 		}
@@ -480,11 +483,11 @@ a {
 			position: absolute;
 			top: 0;
 			left: 0;
-			animation: slideOut 1s forwards;
+			animation: fadeOut 1s forwards;
 			overflow: hidden;
 
 			&.active {
-				animation: slideIn 1s forwards;
+				animation: fadeIn 1s forwards;
 			}
 
 			img {
@@ -572,6 +575,7 @@ a {
 				text-align: center;
 				color: #5d5d5d;
 				font-style: italic;
+				line-height: 1.5em;
 			}
 		}
 	}
@@ -583,7 +587,7 @@ a {
 .directions {
 	position: relative;
 	min-height: 100vh;
-	padding: 0 5%;
+	padding: 0;
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
@@ -611,8 +615,6 @@ a {
 		&__item {
 			position: relative;
 			width: 80%;
-			max-width: 400px;
-			margin: 0 20px;
 
 			&__image {
 				position: relative;
@@ -722,7 +724,7 @@ a {
 					height: 100%;
 					margin: 0;
 					font-size: 8em;
-					line-height: 0.3em;
+					line-height: 0.8em;
 				}
 
 				&__comment {

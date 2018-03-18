@@ -19,9 +19,10 @@
 
 	<ul class="menu">
 		<li class="menu__item"><a href="#banner">Home</a></li>
-		<li class="menu__item"><a href="#business-model">Business Model</a></li>
-		<li class="menu__item"><a href="#bullet-points">Advantages</a></li>
-		<li class="menu__item"><a href="#how_it_works">Application</a></li>
+		<li class="menu__item"><a href="#how_it_works">How it works</a></li>
+		<li class="menu__item"><a href="#advantages">The Difference</a></li>
+		<li class="menu__item"><a href="#business_model">Business Model</a></li>
+		<li class="menu__item"><a href="#directions">Where We fly</a></li>
 	</ul>
 	<div class="contact-us">
 		<a href="mailto:test@gmail.com">constact us</a>
@@ -30,7 +31,7 @@
 		<img src="./images/icons/menu.svg" alt="menu button" id="show-menu">
 	</div>
 </div>
-<div class="main_banner">
+<div class="main_banner" id="banner">
 	<div class="shadow"></div>
 	<div class="container">
 		<div class="main_banner__content">
@@ -96,9 +97,9 @@
 		</div>
 	</div>
 </div>
-<div class="advantages carousel" data-interval="10">
+<div class="advantages carousel" data-interval="10" id="advantages">
 	<p class="carousel__arrows left_arrow">
-		left
+		<img src="./images/icons/arrow.svg" alt="right arrow">
 	</p>
 	<div class="advantages__items items ">
 		<div class="advantages__items__item item active">
@@ -146,10 +147,10 @@
 		</div>
 	</div>
 	<p class="carousel__arrows right_arrow">
-		right
+		<img src="./images/icons/arrow.svg" alt="right arrow">
 	</p>
 </div>
-<div class="business_model">
+<div class="business_model" id="business_model">
 	<h2 class="business_model__title">
 		Our Business Model
 	</h2>
@@ -196,7 +197,7 @@
 		</div>
 	</div>
 </div>
-<div class="directions">
+<div class="directions" id="directions">
 	<h2 class="directions__title">
 		Where We Fly
 	</h2>
@@ -280,10 +281,11 @@
 	</p>
 </div>
 <footer>
-	<p>&copy; AYR</p>
+	<p>&copy; Fly AYR, LLC - All Rights Reserved</p>
 </footer>
 </body>
 <script src="./js/jquery-3.3.1.min.js"></script>
 <script src="./js/main.js"></script>
 <script src="./js/carousel.js"></script>
+<script src="./js/scroll.js"></script>
 </html>

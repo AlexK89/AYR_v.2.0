@@ -280,8 +280,8 @@ a {
 //How it works
 //================================
 .how_it_works {
-	min-height: calc(100vh - 80px);
-	padding: 100px 5%;
+	min-height: 100vh;
+	padding: 140px 5%;
 
 	@media screen and (max-width: 480px) {
 		height: auto;
@@ -417,25 +417,56 @@ a {
 //================================
 .advantages {
 	position: relative;
-	height: calc(100vh - 80px);
+	height: 100vh;
 	overflow: hidden;
 
 	.carousel__arrows {
 		margin: 0;
 		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		height: 100%;
 		width: 50px;
-		background: rgba(98, 180, 78, 0.9);
 		color: #ffffff;
 		z-index: 15;
 		top: 0;
+		cursor: pointer;
+		transition: 0.3s;
 
+		&:hover {
+			background: rgba(253, 255, 254, 0.3);
+		}
+
+		&:active {
+			&.left_arrow {
+				img {
+					transform: scale(0.9) rotate(180deg);
+				}
+			}
+			&.right_arrow {
+				img {
+					transform: scale(0.9);
+				}
+			}
+		}
 		&.left_arrow {
 			left: 0;
+
+			img {
+				transition: .3s;
+				width: 40px;
+				transform: rotate(180deg);
+			}
 		}
 
 		&.right_arrow {
 			right: 0;
+
+			img {
+				transition: .3s;
+				width: 40px;
+			}
 		}
 	}
 	&__items {
@@ -495,8 +526,8 @@ a {
 //================================
 .business_model {
 	position: relative;
-	min-height: calc(100vh - 80px);
-	padding: 100px 5% 0;
+	min-height: 100vh;
+	padding: 0 5%;
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
@@ -550,7 +581,7 @@ a {
 //================================
 .directions {
 	position: relative;
-	min-height: calc(100vh - 80px);
+	min-height: 100vh;
 	padding: 0 5%;
 	overflow: hidden;
 	display: flex;
@@ -736,12 +767,12 @@ a {
 //Footer
 //================================
 footer {
-	background-color: #a87f74;
+	background-color: #ffffff;
 	height: 70px;
 
 	p {
 		margin: 0;
-		color: #ffffff;
+		color: #5d5d5d;
 		line-height: 70px;
 		text-align: center;
 		letter-spacing: 2px;

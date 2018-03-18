@@ -431,7 +431,7 @@ a {
 		top: 0;
 
 		&.left_arrow {
-		left: 0;
+			left: 0;
 		}
 
 		&.right_arrow {
@@ -451,7 +451,7 @@ a {
 			left: 0;
 			animation: slideOut 1s forwards;
 			overflow: hidden;
-			
+
 			&.active {
 				animation: slideIn 1s forwards;
 			}
@@ -545,7 +545,6 @@ a {
 	}
 }
 
-
 //================================
 //Directions
 //================================
@@ -628,6 +627,107 @@ a {
 					opacity: 1;
 				}
 			}
+		}
+	}
+}
+
+//================================
+//Pricing
+//================================
+.pricing {
+	padding: 50px 5%;
+	background: url("../images/pricing_background.jpg") no-repeat center center;
+	background-size: cover;
+
+	&__title {
+		text-align: center;
+		color: #ffffff;
+		margin-bottom: 50px;
+	}
+
+	&__content {
+		display: flex;
+		justify-content: center;
+
+		&__item {
+			width: 500px;
+			&:first-child {
+				margin: 10px 0;
+				border-top: 1px solid #ffffff;
+				border-left: 1px solid #ffffff;
+				border-bottom: 1px solid #ffffff;
+			}
+
+			&:last-child {
+				padding: 10px 0;
+				background-color: #a87f74;
+			}
+
+			&__title {
+				text-transform: uppercase;
+				letter-spacing: 0.125em;
+				text-align: center;
+				color: #ffffff;
+				margin: 2em 0;
+			}
+
+			&__price {
+				color: #ffffff;
+				margin: 0;
+				height: 100px;
+				display: flex;
+				justify-content: center;
+				align-items: flex-end;
+				position: relative;
+
+				&__dollar {
+					margin: 0;
+					font-size: 1em;
+					height: 100%;
+				}
+
+				&__numbers {
+					height: 100%;
+					margin: 0;
+					font-size: 8em;
+					line-height: 0.3em;
+				}
+
+				&__comment {
+					display: flex;
+					align-items: flex-end;
+					margin: 0;
+					font-size: 1em;
+					height: 100%;
+				}
+			}
+
+			&__amount {
+				text-align: center;
+				color: #ffffff;
+				text-transform: uppercase;
+				margin: 2em 0 1em;
+				font-size: 1.25em;
+			}
+
+			&__notice {
+				text-align: center;
+				color: #ffffff;
+				font-style: italic;
+				font-size: 0.75em;
+				margin: 0 0 4em;
+			}
+		}
+	}
+
+	&__notice {
+		margin: 30px 0;
+		text-align: center;
+		color: #ffffff;
+		a {
+			text-decoration: none;
+			color: #ffffff;
+			font-weight: bold;
 		}
 	}
 }

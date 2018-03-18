@@ -279,6 +279,10 @@ a {
 			max-width: 1200px;
 			text-align: center;
 			line-height: 2em;
+
+			&:first-child {
+				margin-bottom: 30px;
+			}
 		}
 	}
 }

@@ -206,6 +206,8 @@ a {
       max-width: 1200px;
       text-align: center;
       line-height: 2em; }
+      .main_banner__details p:first-child {
+        margin-bottom: 30px; }
 
 .how_it_works {
   min-height: 100vh;

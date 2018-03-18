@@ -493,7 +493,7 @@ a {
     display: flex;
     justify-content: center; }
     .pricing__content__item {
-      width: 500px; }
+      width: 400px; }
       .pricing__content__item:first-child {
         margin: 10px 0;
         border-top: 1px solid #ffffff;

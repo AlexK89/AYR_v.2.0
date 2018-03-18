@@ -12,56 +12,49 @@
 </head>
 <body>
 <div class="navigation">
-	<div class="dropdown_menu">
-		<img src="./images/icons/menu.svg" alt="menu button" id="show-menu">
-	</div>
 	<div class="nav_logo">
 		<img src="./images/full_logo.png" alt="logo" class="logo">
 		<p>...at your request</p>
 	</div>
 
 	<ul class="menu">
-		<li class="nav_item"><a href="#banner">Home</a></li>
-		<li class="nav_item"><a href="#business-model">Business Model</a></li>
-		<li class="nav_item"><a href="#bullet-points">Advantages</a></li>
-		<li class="nav_item"><a href="#app">Application</a></li>
+		<li class="menu__item"><a href="#banner">Home</a></li>
+		<li class="menu__item"><a href="#business-model">Business Model</a></li>
+		<li class="menu__item"><a href="#bullet-points">Advantages</a></li>
+		<li class="menu__item"><a href="#how_it_works">Application</a></li>
 	</ul>
-</div>
-<div class="main_banner">
-	<div class="main_content">
-		<div class="carousel" data-interval="8">
-			<p class="carousel__arrows left_arrow">
-				<img src="./images/icons/back.svg" alt="back arrow">
-			</p>
-			<div class="images">
-				<img src="images/1.jpg" alt="private jet" class="active">
-				<img src="images/img_3.jpg" alt="private jet">
-			</div>
-			<p class="carousel__arrows right_arrow">
-				<img src="./images/icons/next.svg" alt="next arrow">
-			</p>
-		</div>
-		<div class="content">
-			<div class="text">
-				<p>Finally, an on-demand private jet option that won’t break the bank and won’t require a
-					subscription!</p>
-				<button class="learn_more btn-large">Learn more</button>
-			</div>
-		</div>
-		<div class="form">
-			<form action="#">
-				<h2>Interested?</h2>
-				<p>Let's keep in touch</p>
-				<label for="name">Full Name</label>
-				<input type="text" id="name" placeholder="Your name" pattern="[A-Za-z]{,30}" required>
-				<label for="email">Email</label>
-				<input type="email" id="email" placeholder="Email" required>
-				<button type="submit" class="btn-large">Submit</button>
-			</form>
-		</div>
+	<div class="contact-us">
+		<a href="mailto:test@gmail.com">constact us</a>
+	</div>
+	<div class="dropdown_menu">
+		<img src="./images/icons/menu.svg" alt="menu button" id="show-menu">
 	</div>
 </div>
-<div class="app" id="app">
+<div class="main_banner">
+	<div class="shadow"></div>
+	<div class="container">
+		<h1 class="main_banner__title">
+			AYR, On-Demand Shared Private Travel
+		</h1>
+		<h2 class="main_banner__sub-title">
+			Finally, private travel that won't break the bank and won't require a subscription!
+		</h2>
+		<form action="#" class="main_banner__form">
+			<p class="main_banner__form__title">
+				SIGN UP TO HEAR ABOUT OUR PROGRESS
+			</p>
+			<input type="text" placeholder="Name">
+			<input type="email" placeholder="Email">
+			<button type="submit">Sign Up</button>
+			<p class="main_banner__form__notice">
+				*We don’t share your personal information with anyone
+			</p>
+		</form>
+	</div>
+</div>
+
+
+<div class="how_it_works" id="how_it_works">
 	<div class="container">
 		<div class="route">
 			<h1>User experience journey</h1>
@@ -89,81 +82,8 @@
 		</div>
 	</div>
 </div>
-<div class="bullet-points">
-	<div class="bullet-point bullet-point-1" id="bullet-point-1">
-		<h1>Your time is valuable</h1>
-		<div class="content-wrapper">
-			<div class="container-content">
-				<p> The average traveller spends 2.5hrs on basic travel logistics. With us that's not necessary.
-					Know your priorities. Use time efficiently
-				</p>
-				<hr>
-				<img src="./images/logo.png" alt="logo">
-			</div>
-		</div>
-	</div>
-	<div class="bullet-point bullet-point-2" id="bullet-point-2">
-		<h1>Great value, no commitments</h1>
-		<div class="content-wrapper">
-			<div class="container-content">
-				<p> We provide the best value in the industry, without the subscription fee
-				</p>
-				<hr>
-				<img src="./images/logo.png" alt="logo">
-			</div>
-		</div>
-	</div>
-	<div class="bullet-point bullet-point-3" id="bullet-point-3">
-		<h1>Travel at your convenience</h1>
-		<div class="content-wrapper">
-			<div class="container-content">
-				<p>Pick the time that suits your schedule, create your own flight or follow others' lead; fly on-demand
-				</p>
-				<hr>
-				<img src="./images/logo.png" alt="logo">
-			</div>
-		</div>
-	</div>
-	<div class="bullet-point bullet-point-4" id="bullet-point-4">
-		<h1>Dodge the crowds</h1>
-		<div class="content-wrapper">
-			<div class="container-content">
-				<p>With us there are no long security queues. We fly out of small, conveniently located airports that
-					provide
-					the ultimate private experience; just arrive and go
-				</p>
-				<hr>
-				<img src="./images/logo.png" alt="logo">
-			</div>
-		</div>
-	</div>
-</div>
-<div class="how_it_works container">
-	<div class="items">
-		<div class="item_1 item">
-			<h2><img src="./images/icons/dollar.svg" alt="dollar sign"></h2>
-			<h5 class="title">Low Cost Carrier Model</h5>
-			<p class="text">By operating only one type of aircraft, flying out of underutilized regional airports, and
-				focusing on short-haul routes, we can offer best-in-class value to our target demographic – much in the
-				same way Southwest does for their target demographic</p>
-		</div>
-		<div class="item_2 item">
-			<h2><img src="./images/icons/time.svg" alt="dollar sign"></h2>
-			<h5 class="title">Flexible Pooling Platform</h5>
-			<p class="text">Why charter a whole plane if you only need one seat? At AYR, the customer books and pays for
-				only the seat(s) they need, sets a departure time that best fits their schedule then we take care of the
-				rest. AYR matches customers with similar travel schedules</p>
-		</div>
-		<div class="item_3 item">
-			<h2><img src="./images/icons/finger.svg" alt="dollar sign"></h2>
-			<h5 class="title">Dynamic, Non-Subscription, Pricing Model</h5>
-			<p class="text">We quote prices based on the probability of achieving 100% load factor</p>
-		</div>
-	</div>
-</div>
-<div class="book_journey" id="js-scroll_to_form">
-	<button>Book journey</button>
-</div>
+
+
 <footer>
 	<p>&copy; AYR</p>
 </footer>

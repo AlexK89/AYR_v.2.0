@@ -197,8 +197,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url("../images/clouds.jpg") no-repeat center center;
-    background-size: cover;
+    background-color: rgba(37, 40, 45, 0.85);
     color: #ffffff;
     padding: 4em 0; }
     .main_banner__details p {

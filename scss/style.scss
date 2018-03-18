@@ -58,7 +58,7 @@ a {
 	height: 100%;
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.3);
-	z-index: 0;
+	z-index: 5;
 }
 
 //================================
@@ -465,6 +465,7 @@ a {
 				position: absolute;
 				top: 0;
 				left: 0;
+				z-index: 10;
 				padding: 0 5%;
 				width: 100%;
 				height: 100%;
@@ -495,7 +496,7 @@ a {
 .business_model {
 	position: relative;
 	min-height: calc(100vh - 80px);
-	padding: 100px 5%;
+	padding: 100px 5% 0;
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
@@ -539,6 +540,93 @@ a {
 				text-align: center;
 				color: #5d5d5d;
 				font-style: italic;
+			}
+		}
+	}
+}
+
+
+//================================
+//Directions
+//================================
+.directions {
+	position: relative;
+	min-height: calc(100vh - 80px);
+	padding: 0 5%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	&__title {
+		text-align: center;
+		font-size: 2em;
+		letter-spacing: 0.06em;
+		margin-bottom: 0;
+	}
+
+	&__sub-title {
+		text-align: center;
+		margin-bottom: 100px;
+		color: #5d5d5d;
+	}
+
+	&__items {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+
+		&__item {
+			position: relative;
+			width: 80%;
+			max-width: 400px;
+			margin: 0 20px;
+
+			&__image {
+				position: relative;
+				width: 100%;
+				height: 0;
+				padding-bottom: 100%;
+				overflow: hidden;
+
+				img {
+					position: absolute;
+					min-width: 100%;
+					height: 100%;
+					object-fit: fill;
+				}
+			}
+			&__content {
+				display: flex;
+				opacity: 0;
+				background-color: rgba(0, 0, 0, 0.5);
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				color: #ffffff;
+				padding: 0 15px;
+				transition: .3s;
+
+				&__title {
+					font-size: 1.25em;
+					text-align: center;
+				}
+
+				&__text {
+					text-align: center;
+				}
+			}
+
+			&:hover {
+				.directions__items__item__content {
+					opacity: 1;
+				}
 			}
 		}
 	}

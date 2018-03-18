@@ -369,11 +369,13 @@ a {
         .advantages__items__item__content__title {
           color: #ffffff;
           font-size: 3em;
+          font-weight: normal;
           letter-spacing: 0.125em;
           margin-bottom: 0; }
         .advantages__items__item__content__sub-title {
           max-width: 700px;
-          line-height: 2em;
+          font-size: 1.25em;
+          line-height: 1.5em;
           text-align: center;
           color: #ffffff; }
 
@@ -396,7 +398,8 @@ a {
     margin-bottom: 100px;
     color: #5d5d5d;
     max-width: 800px;
-    font-weight: normal; }
+    font-weight: normal;
+    font-style: italic; }
   .business_model__items {
     display: flex;
     justify-content: center; }
@@ -434,7 +437,9 @@ a {
   .directions__sub-title {
     text-align: center;
     margin-bottom: 100px;
-    color: #5d5d5d; }
+    color: #5d5d5d;
+    font-style: italic;
+    max-width: 800px; }
   .directions__items {
     display: flex;
     justify-content: center;

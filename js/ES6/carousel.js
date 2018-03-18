@@ -4,7 +4,6 @@ const carouselArrows = document.querySelectorAll('.carousel__arrows');
 for (let carouselArrow of carouselArrows) {
 	carouselArrow.addEventListener('click', function () {
 		changeImage(this);
-
 	})
 }
 

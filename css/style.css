@@ -368,6 +368,7 @@ a {
           margin-bottom: 0; }
         .advantages__items__item__content__sub-title {
           max-width: 700px;
+          line-height: 2em;
           text-align: center;
           color: #ffffff; }
 

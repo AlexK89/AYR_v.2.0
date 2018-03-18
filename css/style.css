@@ -202,98 +202,99 @@ a {
       line-height: 2em; }
 
 .how_it_works {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-  height: 100vh;
-  padding: 70px 5%; }
+  min-height: 100vh;
+  padding: 100px 5%; }
   @media screen and (max-width: 480px) {
     .how_it_works {
       height: auto; } }
+  .how_it_works__title {
+    margin: 0 0 2em;
+    font-size: 2em;
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    color: #5d5d5d;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.16), 0 2px 4px rgba(0, 0, 0, 0.3); }
+    @media screen and (max-width: 480px) {
+      .how_it_works__title {
+        font-size: 2rem;
+        text-align: center; } }
   .how_it_works .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
     max-width: 1800px;
     margin: 0 auto; }
     @media screen and (max-width: 480px) {
       .how_it_works .container {
         flex-direction: column; } }
-    .how_it_works .container .route {
+  .how_it_works__text-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 2em;
+    width: 50%; }
+    @media screen and (max-width: 480px) {
+      .how_it_works__text-container {
+        height: auto;
+        max-width: 100%;
+        margin-bottom: 40px; } }
+    .how_it_works__text-container__title {
+      text-align: right;
+      font-size: 2em;
+      max-width: 500px; }
+    .how_it_works__text-container__text {
+      text-align: right;
+      max-width: 500px;
+      line-height: 2em; }
+  .how_it_works .our_app {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    position: relative; }
+    @media screen and (max-width: 480px) {
+      .how_it_works .our_app {
+        width: auto; } }
+    .how_it_works .our_app .phone_skin {
       height: 560px;
-      max-width: 50%;
-      position: relative; }
-      @media screen and (max-width: 480px) {
-        .how_it_works .container .route {
-          height: auto;
-          max-width: 100%;
-          margin-bottom: 40px; } }
-      .how_it_works .container .route h1 {
-        margin: 0;
-        font-size: 3rem;
-        font-weight: normal;
-        font-family: 'Playfair Display', serif;
-        letter-spacing: 4px;
-        color: #5d5d5d;
-        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.16), 0 2px 4px rgba(0, 0, 0, 0.3); }
-        @media screen and (max-width: 480px) {
-          .how_it_works .container .route h1 {
-            font-size: 2rem;
-            text-align: center; } }
-      .how_it_works .container .route img {
-        display: block;
-        height: 60%;
-        margin: 20% auto; }
-        @media screen and (max-width: 480px) {
-          .how_it_works .container .route img {
-            display: none; } }
-    .how_it_works .container .our_app {
-      display: flex;
-      justify-content: center;
-      width: 395px;
-      position: relative; }
-      @media screen and (max-width: 480px) {
-        .how_it_works .container .our_app {
-          width: auto; } }
-      .how_it_works .container .our_app .phone_skin {
-        height: 560px;
-        margin: 0 auto;
-        transition: .3s;
-        z-index: 10; }
-      .how_it_works .container .our_app .carousel {
+      margin: 0 auto;
+      transition: .3s;
+      z-index: 10; }
+    .how_it_works .our_app .carousel {
+      position: absolute;
+      width: 100%;
+      height: 100%; }
+      .how_it_works .our_app .carousel .carousel__arrows {
         position: absolute;
-        width: 100%;
-        height: 100%; }
-        .how_it_works .container .our_app .carousel .carousel__arrows {
+        top: calc(50% - 15px);
+        height: 30px;
+        transition: .3s; }
+        .how_it_works .our_app .carousel .carousel__arrows img {
+          height: 30px; }
+        .how_it_works .our_app .carousel .carousel__arrows.left_arrow {
+          left: 5px;
+          transform: rotate(180deg); }
+          .how_it_works .our_app .carousel .carousel__arrows.left_arrow:active {
+            transform: rotate(180deg) scale(0.9); }
+        .how_it_works .our_app .carousel .carousel__arrows.right_arrow {
+          right: 5px; }
+          .how_it_works .our_app .carousel .carousel__arrows.right_arrow:active {
+            transform: scale(0.9); }
+      .how_it_works .our_app .carousel .our_app-img {
+        position: relative;
+        margin: 68px auto;
+        width: 241px;
+        height: calc(100% - 136px); }
+        .how_it_works .our_app .carousel .our_app-img img {
           position: absolute;
-          top: calc(50% - 15px);
-          height: 30px;
-          transition: .3s; }
-          .how_it_works .container .our_app .carousel .carousel__arrows img {
-            height: 30px; }
-          .how_it_works .container .our_app .carousel .carousel__arrows.left_arrow {
-            left: 5px;
-            transform: rotate(180deg); }
-            .how_it_works .container .our_app .carousel .carousel__arrows.left_arrow:active {
-              transform: rotate(180deg) scale(0.9); }
-          .how_it_works .container .our_app .carousel .carousel__arrows.right_arrow {
-            right: 5px; }
-            .how_it_works .container .our_app .carousel .carousel__arrows.right_arrow:active {
-              transform: scale(0.9); }
-        .how_it_works .container .our_app .carousel .our_app-img {
-          position: relative;
-          margin: 68px auto;
+          top: 0;
+          left: 0;
           width: 241px;
-          height: calc(100% - 136px); }
-          .how_it_works .container .our_app .carousel .our_app-img img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 241px;
-            animation: fadeOut 1s forwards; }
-            .how_it_works .container .our_app .carousel .our_app-img img.active {
-              animation: fadeIn 1s forwards; }
+          animation: fadeOut 1s forwards; }
+          .how_it_works .our_app .carousel .our_app-img img.active {
+            animation: fadeIn 1s forwards; }
 
 footer {
   background-color: #a87f74;

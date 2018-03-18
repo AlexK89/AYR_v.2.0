@@ -267,7 +267,8 @@ a {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		background-color: #25282d;
+		background: url("../images/clouds.jpg") no-repeat center center;
+		background-size: cover;
 		color: #ffffff;
 		padding: 4em 0;
 

@@ -239,24 +239,29 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
-    padding: 0 2em;
-    width: 50%; }
+    align-items: flex-start;
+    padding: 0 3em; }
     @media screen and (max-width: 480px) {
       .how_it_works__text-container {
         height: auto;
         max-width: 100%;
         margin-bottom: 40px; } }
-    .how_it_works__text-container__title {
-      text-align: right;
-      font-size: 2em;
-      max-width: 500px; }
-    .how_it_works__text-container__text {
-      text-align: right;
+    .how_it_works__text-container__point {
       max-width: 500px;
-      line-height: 2em; }
+      display: flex; }
+      .how_it_works__text-container__point__number {
+        display: flex;
+        flex-direction: column;
+        font-size: 4em;
+        min-width: 110px;
+        color: #a87f74;
+        font-weight: bold;
+        letter-spacing: 0.125em; }
+      .how_it_works__text-container__point__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
   .how_it_works .our_app {
-    width: 50%;
     display: flex;
     justify-content: center;
     position: relative; }

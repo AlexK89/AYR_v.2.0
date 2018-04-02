@@ -796,7 +796,7 @@ a {
 				position: relative;
 
 				&__dollar {
-					margin: 0;
+					margin: 0 0.5em;
 					font-size: 1em;
 					height: 100%;
 				}
@@ -817,14 +817,19 @@ a {
 				}
 			}
 
-			&__amount {
+			&__destination {
 				text-align: center;
 				color: #ffffff;
 				text-transform: uppercase;
 				margin: 2em 0 1em;
-				font-size: 1.25em;
+				font-size: 1em;
+				line-height: 1.5em;
 			}
 
+			&__flight_time {
+				text-align: center;
+				color: #ffffff;
+			}
 			&__notice {
 				text-align: center;
 				color: #ffffff;
@@ -839,6 +844,7 @@ a {
 		margin: 30px 0;
 		text-align: center;
 		color: #ffffff;
+
 		a {
 			text-decoration: none;
 			color: #ffffff;

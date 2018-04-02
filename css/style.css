@@ -563,7 +563,7 @@ a {
         align-items: flex-end;
         position: relative; }
         .pricing__content__item__price__dollar {
-          margin: 0;
+          margin: 0 0.5em;
           font-size: 1em;
           height: 100%; }
         .pricing__content__item__price__numbers {
@@ -577,12 +577,16 @@ a {
           margin: 0;
           font-size: 1em;
           height: 100%; }
-      .pricing__content__item__amount {
+      .pricing__content__item__destination {
         text-align: center;
         color: #ffffff;
         text-transform: uppercase;
         margin: 2em 0 1em;
-        font-size: 1.25em; }
+        font-size: 1em;
+        line-height: 1.5em; }
+      .pricing__content__item__flight_time {
+        text-align: center;
+        color: #ffffff; }
       .pricing__content__item__notice {
         text-align: center;
         color: #ffffff;

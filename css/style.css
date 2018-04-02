@@ -61,6 +61,10 @@ a {
     align-items: center;
     width: 295px;
     padding: 0 30px; }
+    @media screen and (max-width: 1300px) {
+      .navigation .nav_logo {
+        position: relative;
+        flex: 1 1 auto; } }
     .navigation .nav_logo img {
       height: 40px; }
     .navigation .nav_logo p {
@@ -80,11 +84,13 @@ a {
     @media screen and (max-width: 1300px) {
       .navigation .menu {
         position: absolute;
+        overflow: hidden;
         width: 100%;
-        height: auto;
+        height: 0;
         top: 80px;
         flex-wrap: wrap;
-        background-color: #ffffff; } }
+        background-color: #ffffff;
+        transition: .3s; } }
     .navigation .menu__item {
       display: flex;
       align-items: center; }
@@ -117,6 +123,10 @@ a {
     justify-content: center;
     padding: 0 30px;
     right: 0; }
+    @media screen and (max-width: 1300px) {
+      .navigation .contact-us {
+        position: relative;
+        padding: 0; } }
     .navigation .contact-us a {
       display: inline-block;
       text-align: center;
@@ -132,16 +142,18 @@ a {
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
       .navigation .contact-us a:hover {
         background: #c0907f; }
+      @media screen and (max-width: 1300px) {
+        .navigation .contact-us a {
+          height: 40px;
+          line-height: 40px; } }
   .navigation .dropdown_menu {
     display: none;
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    height: 40px;
-    width: 40px; }
-    @media screen and (max-width: 768px) {
+    padding: 0 20px; }
+    @media screen and (max-width: 1300px) {
       .navigation .dropdown_menu {
-        display: block; } }
+        display: flex;
+        flex-direction: column;
+        justify-content: center; } }
     .navigation .dropdown_menu img {
       width: 40px; }
 

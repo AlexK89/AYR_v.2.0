@@ -85,6 +85,11 @@ a {
 		width: 295px;
 		padding: 0 30px;
 
+		@media screen and (max-width: 1300px) {
+			position: relative;
+			flex: 1 1 auto;
+		}
+
 		img {
 			height: 40px;
 		}
@@ -110,11 +115,13 @@ a {
 
 		@media screen and (max-width: 1300px) {
 			position: absolute;
+			overflow: hidden;
 			width: 100%;
-			height: auto;
+			height: 0;
 			top: 80px;
 			flex-wrap: wrap;
 			background-color: #ffffff;
+			transition: .3s;
 		}
 
 		&__item {
@@ -158,6 +165,11 @@ a {
 		padding: 0 30px;
 		right: 0;
 
+		@media screen and (max-width: 1300px) {
+			position: relative;
+			padding: 0;
+		}
+		
 		a {
 			display: inline-block;
 			text-align: center;
@@ -175,18 +187,21 @@ a {
 			&:hover {
 				background: rgb(192, 144, 127);
 			}
+
+			@media screen and (max-width: 1300px) {
+				height: 40px;
+				line-height: 40px;
+			}
 		}
 	}
 	.dropdown_menu {
 		display: none;
-		position: absolute;
-		top: 15px;
-		right: 20px;
-		height: 40px;
-		width: 40px;
+		padding: 0 20px;
 
-		@media screen and (max-width: 768px) {
-			display: block;
+		@media screen and (max-width: 1300px) {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
 		}
 
 		img {

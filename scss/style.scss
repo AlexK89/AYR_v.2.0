@@ -92,6 +92,10 @@ a {
 		p {
 			margin-top: 20px;
 			margin-bottom: 0;
+
+			@media screen and (max-width: 1300px) {
+				display: none;
+			}
 		}
 	}
 
@@ -104,10 +108,22 @@ a {
 		margin: 0;
 		padding: 0;
 
+		@media screen and (max-width: 1300px) {
+			position: absolute;
+			width: 100%;
+			height: auto;
+			top: 80px;
+			flex-wrap: wrap;
+			background-color: #ffffff;
+		}
+
 		&__item {
 			display: flex;
 			align-items: center;
 
+			@media screen and (max-width: 1300px) {
+				width: 100%;
+			}
 			a {
 				display: block;
 				height: 100%;
@@ -121,6 +137,12 @@ a {
 				&:hover {
 					background-color: #a87f74;
 					color: #ffffff;
+				}
+
+				@media screen and (max-width: 1300px) {
+					width: 100%;
+					text-align: right;
+					padding: 0 2em;
 				}
 			}
 		}

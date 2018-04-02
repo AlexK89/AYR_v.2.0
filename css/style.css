@@ -540,9 +540,14 @@ a {
         border-top: 1px solid #ffffff;
         border-left: 1px solid #ffffff;
         border-bottom: 1px solid #ffffff; }
-      .pricing__content__item:last-child {
+      .pricing__content__item:nth-child(2) {
         padding: 10px 0;
         background-color: #a87f74; }
+      .pricing__content__item:last-child {
+        margin: 10px 0;
+        border-top: 1px solid #ffffff;
+        border-right: 1px solid #ffffff;
+        border-bottom: 1px solid #ffffff; }
       .pricing__content__item__title {
         text-transform: uppercase;
         letter-spacing: 0.125em;

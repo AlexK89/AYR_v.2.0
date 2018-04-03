@@ -1,13 +1,14 @@
 let showDropdownMenu = document.querySelector('.menu');
 let menuButton = document.querySelector('.dropdown_menu img');
 
+
 menuButton.addEventListener('click', (ev) => {
 	ev.stopPropagation();
 
-	if (showDropdownMenu.style.height === '320px') {
-		showDropdownMenu.style.height = '0';
+	if (!showDropdownMenu.classList.contains('active')) {
+		showDropdownMenu.classList.add('active');
 	} else {
-		showDropdownMenu.style.height = '320px';
+		showDropdownMenu.classList.remove('active');
 	}
 });
 

@@ -89,12 +89,18 @@ a {
         height: 0;
         top: 80px;
         flex-wrap: wrap;
+        justify-content: flex-end;
         background-color: #ffffff;
-        transition: .3s; } }
+        transition: .3s; }
+        .navigation .menu.active {
+          height: 80px; } }
+    @media screen and (max-width: 928px) {
+      .navigation .menu.active {
+        height: 400px; } }
     .navigation .menu__item {
       display: flex;
       align-items: center; }
-      @media screen and (max-width: 1300px) {
+      @media screen and (max-width: 928px) {
         .navigation .menu__item {
           width: 100%; } }
       .navigation .menu__item a {
@@ -127,7 +133,12 @@ a {
       .navigation .contact-us {
         position: relative;
         padding: 0; } }
+    @media screen and (max-width: 928px) {
+      .navigation .contact-us {
+        width: auto; } }
     .navigation .contact-us a {
+      position: relative;
+      overflow: hidden;
       display: inline-block;
       text-align: center;
       line-height: 50px;
@@ -146,6 +157,19 @@ a {
         .navigation .contact-us a {
           height: 40px;
           line-height: 40px; } }
+      @media screen and (max-width: 928px) {
+        .navigation .contact-us a {
+          text-indent: -9999px;
+          border-radius: 50%;
+          width: 40px; }
+          .navigation .contact-us a .contact-us__email {
+            position: absolute;
+            top: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: url("../images/mail.svg") no-repeat center center;
+            background-size: 25px; } }
   .navigation .dropdown_menu {
     display: none;
     padding: 0 20px; }
@@ -243,6 +267,9 @@ a {
 .how_it_works {
   min-height: 100vh;
   padding: 140px 5%; }
+  @media screen and (max-width: 1024px) {
+    .how_it_works {
+      min-height: auto; } }
   @media screen and (max-width: 480px) {
     .how_it_works {
       height: auto; } }

@@ -550,6 +550,14 @@ a {
 	height: 100vh;
 	overflow: hidden;
 
+	@media screen and (max-width: 1024px) {
+		max-height: 600px;
+	}
+
+	@media screen and (max-width: 768px) {
+		max-height: 400px;
+	}
+
 	.carousel__arrows {
 		margin: 0;
 		position: absolute;
@@ -563,6 +571,10 @@ a {
 		top: 0;
 		cursor: pointer;
 		transition: 0.3s;
+
+		@media screen and (max-width: 1024px) {
+			width: 25px;
+		}
 
 		&:hover {
 			background: rgba(253, 255, 254, 0.3);
@@ -587,6 +599,10 @@ a {
 				transition: .3s;
 				width: 40px;
 				transform: rotate(180deg);
+
+				@media screen and (max-width: 1024px) {
+					width: 25px;
+				}
 			}
 		}
 
@@ -596,6 +612,10 @@ a {
 			img {
 				transition: .3s;
 				width: 40px;
+
+				@media screen and (max-width: 1024px) {
+					width: 25px;
+				}
 			}
 		}
 	}
@@ -635,12 +655,25 @@ a {
 				justify-content: center;
 				align-items: center;
 
+				@media screen and (max-width: 1024px) {
+					padding: 0 10%;
+				}
+
 				&__title {
+					text-align: center;
 					color: #ffffff;
 					font-size: 3em;
 					font-weight: normal;
 					letter-spacing: 0.125em;
 					margin-bottom: 0;
+
+					@media screen and (max-width: 1024px) {
+						font-size: 2em;
+					}
+
+					@media screen and (max-width: 480px) {
+						font-size: 1.2em;
+					}
 				}
 				&__sub-title {
 					max-width: 700px;
@@ -648,6 +681,14 @@ a {
 					line-height: 1.5em;
 					text-align: center;
 					color: #ffffff;
+
+					@media screen and (max-width: 1024px) {
+						font-size: 1em;
+					}
+
+					@media screen and (max-width: 480px) {
+						font-size: 0.7em;
+					}
 				}
 			}
 		}

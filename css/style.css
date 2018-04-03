@@ -401,6 +401,12 @@ a {
   position: relative;
   height: 100vh;
   overflow: hidden; }
+  @media screen and (max-width: 1024px) {
+    .advantages {
+      max-height: 600px; } }
+  @media screen and (max-width: 768px) {
+    .advantages {
+      max-height: 400px; } }
   .advantages .carousel__arrows {
     margin: 0;
     position: absolute;
@@ -414,6 +420,9 @@ a {
     top: 0;
     cursor: pointer;
     transition: 0.3s; }
+    @media screen and (max-width: 1024px) {
+      .advantages .carousel__arrows {
+        width: 25px; } }
     .advantages .carousel__arrows:hover {
       background: rgba(253, 255, 254, 0.3); }
     .advantages .carousel__arrows:active.left_arrow img {
@@ -426,11 +435,17 @@ a {
         transition: .3s;
         width: 40px;
         transform: rotate(180deg); }
+        @media screen and (max-width: 1024px) {
+          .advantages .carousel__arrows.left_arrow img {
+            width: 25px; } }
     .advantages .carousel__arrows.right_arrow {
       right: 0; }
       .advantages .carousel__arrows.right_arrow img {
         transition: .3s;
         width: 40px; }
+        @media screen and (max-width: 1024px) {
+          .advantages .carousel__arrows.right_arrow img {
+            width: 25px; } }
   .advantages__items {
     width: 100%;
     height: 100%;
@@ -461,18 +476,34 @@ a {
         flex-direction: column;
         justify-content: center;
         align-items: center; }
+        @media screen and (max-width: 1024px) {
+          .advantages__items__item__content {
+            padding: 0 10%; } }
         .advantages__items__item__content__title {
+          text-align: center;
           color: #ffffff;
           font-size: 3em;
           font-weight: normal;
           letter-spacing: 0.125em;
           margin-bottom: 0; }
+          @media screen and (max-width: 1024px) {
+            .advantages__items__item__content__title {
+              font-size: 2em; } }
+          @media screen and (max-width: 480px) {
+            .advantages__items__item__content__title {
+              font-size: 1.2em; } }
         .advantages__items__item__content__sub-title {
           max-width: 700px;
           font-size: 1.25em;
           line-height: 1.5em;
           text-align: center;
           color: #ffffff; }
+          @media screen and (max-width: 1024px) {
+            .advantages__items__item__content__sub-title {
+              font-size: 1em; } }
+          @media screen and (max-width: 480px) {
+            .advantages__items__item__content__sub-title {
+              font-size: 0.7em; } }
 
 .business_model {
   position: relative;

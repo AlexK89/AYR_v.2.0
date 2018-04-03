@@ -5,6 +5,7 @@
 	<meta name="viewport"
 		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" type="image/png" sizes="96x96" href="images/favicon.png">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700" rel="stylesheet">
 	<link rel="stylesheet" href="./css/style.css">
 	<title>AYR - 2.0</title>
@@ -12,7 +13,7 @@
 <body>
 <div class="navigation">
 	<div class="nav_logo">
-		<img src="./images/full_logo.png" alt="logo" class="logo">
+		<a href="#banner"><img src="./images/full_logo.png" alt="logo" class="logo"></a>
 		<p>...at your request</p>
 	</div>
 
@@ -44,8 +45,8 @@
 				<p class="main_banner__form__title">
 					SIGN UP TO HEAR ABOUT OUR PROGRESS
 				</p>
-				<input type="text" name="client name" placeholder="Name">
-				<input type="email" name="_replyto" placeholder="Email Address">
+				<input type="text" name="client name" placeholder="Name" required>
+				<input type="email" name="_replyto" placeholder="Email Address" required>
 				<input type="hidden" name="_subject" value="New submission!" />
 				<input type="text" name="_gotcha" style="display:none" />
 				<button type="submit">Sign Up</button>

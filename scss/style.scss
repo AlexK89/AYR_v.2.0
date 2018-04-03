@@ -247,9 +247,19 @@ a {
 //================================
 .main_banner {
 	position: relative;
-	width: 100vw;
+	width: 100%;
 	background: url("../images/main_img.jpg") no-repeat center center fixed;
 	background-size: cover;
+
+	@media screen and (max-width: 1024px) {
+		background: url("../images/main_img.jpg") no-repeat center center;
+		background-size: cover;
+	}
+
+	@media screen and (max-width: 480px) {
+		background: url("../images/main_img.jpg") no-repeat center right;
+		background-size: cover;
+	}
 
 	.container {
 		position: relative;
@@ -821,6 +831,10 @@ a {
 				border-top-left-radius: 5px;
 				border-bottom-left-radius: 5px;
 			}
+
+			@media screen and (max-width: 768px) {
+				border-radius: 5px;
+			}
 		}
 
 		button {
@@ -845,7 +859,9 @@ a {
 			@media screen and (max-width: 768px) {
 				max-width: 300px;
 				width: 90%;
+				border-radius: 5px;
 			}
+
 			&:hover {
 				background: rgb(192, 144, 127);
 			}
@@ -955,7 +971,9 @@ a {
 				}
 			}
 
-			&:hover {
+			&:hover,
+			&:focus,
+			&:active {
 				.directions__items__item__content {
 					opacity: 1;
 				}

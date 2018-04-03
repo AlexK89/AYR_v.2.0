@@ -183,9 +183,17 @@ a {
 
 .main_banner {
   position: relative;
-  width: 100vw;
+  width: 100%;
   background: url("../images/main_img.jpg") no-repeat center center fixed;
   background-size: cover; }
+  @media screen and (max-width: 1024px) {
+    .main_banner {
+      background: url("../images/main_img.jpg") no-repeat center center;
+      background-size: cover; } }
+  @media screen and (max-width: 480px) {
+    .main_banner {
+      background: url("../images/main_img.jpg") no-repeat center right;
+      background-size: cover; } }
   .main_banner .container {
     position: relative;
     display: flex;
@@ -596,6 +604,9 @@ a {
     .extra-form__form input:first-child {
       border-top-left-radius: 5px;
       border-bottom-left-radius: 5px; }
+    @media screen and (max-width: 768px) {
+      .extra-form__form input {
+        border-radius: 5px; } }
   .extra-form__form button {
     max-width: 300px;
     width: 90%;
@@ -616,7 +627,8 @@ a {
     @media screen and (max-width: 768px) {
       .extra-form__form button {
         max-width: 300px;
-        width: 90%; } }
+        width: 90%;
+        border-radius: 5px; } }
     .extra-form__form button:hover {
       background: #c0907f; }
   @media screen and (max-width: 768px) {
@@ -697,7 +709,7 @@ a {
           text-align: center; }
         .directions__items__item__content__text {
           text-align: center; }
-      .directions__items__item:hover .directions__items__item__content {
+      .directions__items__item:hover .directions__items__item__content, .directions__items__item:focus .directions__items__item__content, .directions__items__item:active .directions__items__item__content {
         opacity: 1; }
 
 .pricing {

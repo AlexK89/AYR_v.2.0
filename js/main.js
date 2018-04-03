@@ -14,5 +14,9 @@ menuButton.addEventListener('click', function (ev) {
 });
 
 document.querySelector('body').addEventListener('click', function () {
-	showDropdownMenu.style.height = '0';
+	showDropdownMenu.classList.remove('active');
+});
+
+document.querySelector('body').addEventListener('touchend', function () {
+	showDropdownMenu.classList.remove('active');
 });

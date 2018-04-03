@@ -93,6 +93,7 @@ a {
         background-color: #ffffff;
         transition: .3s; }
         .navigation .menu.active {
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
           height: 80px; } }
     @media screen and (max-width: 928px) {
       .navigation .menu.active {

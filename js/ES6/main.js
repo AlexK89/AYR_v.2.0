@@ -15,7 +15,3 @@ menuButton.addEventListener('click', (ev) => {
 document.querySelector('body').addEventListener('click', function () {
 	showDropdownMenu.classList.remove('active');
 });
-
-document.querySelector('body').addEventListener('touchend', function () {
-	showDropdownMenu.classList.remove('active');
-});

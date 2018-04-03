@@ -781,6 +781,10 @@ a {
 	&__title {
 		font-size: 2em;
 		font-weight: normal;
+
+		@media screen and (max-width: 768px) {
+			font-size: 1.5em;
+		}
 	}
 
 	&__sub-title {
@@ -789,8 +793,15 @@ a {
 	}
 
 	&__form {
+		@media screen and (max-width: 768px) {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
 		input {
-			width: 300px;
+			max-width: 300px;
+			width: 90%;
 			height: 50px;
 			margin: 10px 0;
 			border: none;
@@ -805,7 +816,8 @@ a {
 		}
 
 		button {
-			width: 250px;
+			max-width: 300px;
+			width: 90%;
 			height: 50px;
 			margin: 10px 0;
 			border: none;
@@ -818,9 +830,22 @@ a {
 			border-top-right-radius: 5px;
 			border-bottom-right-radius: 5px;
 
+			@media screen and (max-width: 1024px) {
+				border-radius: inherit;
+			}
+
+			@media screen and (max-width: 768px) {
+				max-width: 300px;
+				width: 90%;
+			}
 			&:hover {
 				background: rgb(192, 144, 127);
 			}
+		}
+	}
+	&__notice {
+		@media screen and (max-width: 768px) {
+			font-size: 0.75em;
 		}
 	}
 }

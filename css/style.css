@@ -567,11 +567,20 @@ a {
   .extra-form__title {
     font-size: 2em;
     font-weight: normal; }
+    @media screen and (max-width: 768px) {
+      .extra-form__title {
+        font-size: 1.5em; } }
   .extra-form__sub-title {
     font-style: italic;
     margin-bottom: 3em; }
+  @media screen and (max-width: 768px) {
+    .extra-form__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
   .extra-form__form input {
-    width: 300px;
+    max-width: 300px;
+    width: 90%;
     height: 50px;
     margin: 10px 0;
     border: none;
@@ -582,7 +591,8 @@ a {
       border-top-left-radius: 5px;
       border-bottom-left-radius: 5px; }
   .extra-form__form button {
-    width: 250px;
+    max-width: 300px;
+    width: 90%;
     height: 50px;
     margin: 10px 0;
     border: none;
@@ -594,8 +604,18 @@ a {
     transition: .3s;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px; }
+    @media screen and (max-width: 1024px) {
+      .extra-form__form button {
+        border-radius: inherit; } }
+    @media screen and (max-width: 768px) {
+      .extra-form__form button {
+        max-width: 300px;
+        width: 90%; } }
     .extra-form__form button:hover {
       background: #c0907f; }
+  @media screen and (max-width: 768px) {
+    .extra-form__notice {
+      font-size: 0.75em; } }
 
 .directions {
   position: relative;

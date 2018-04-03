@@ -703,30 +703,55 @@ a {
     text-align: center;
     color: #ffffff;
     margin-bottom: 50px; }
+    @media screen and (max-width: 480px) {
+      .pricing__title {
+        font-size: 1em; } }
   .pricing__content {
     display: flex;
     justify-content: center; }
+    @media screen and (max-width: 1024px) {
+      .pricing__content {
+        flex-direction: column;
+        align-items: center; } }
     .pricing__content__item {
       width: 400px; }
+      @media screen and (max-width: 1024px) {
+        .pricing__content__item {
+          border: 1px solid #ffffff;
+          max-width: 600px;
+          width: 90%; } }
       .pricing__content__item:first-child {
         margin: 10px 0;
         border-top: 1px solid #ffffff;
         border-left: 1px solid #ffffff;
         border-bottom: 1px solid #ffffff; }
+        @media screen and (max-width: 1024px) {
+          .pricing__content__item:first-child {
+            border: 1px solid #ffffff; } }
       .pricing__content__item:nth-child(2) {
         padding: 10px 0;
         background-color: #a87f74; }
+        @media screen and (max-width: 1024px) {
+          .pricing__content__item:nth-child(2) {
+            max-width: 670px;
+            border: none; } }
       .pricing__content__item:last-child {
         margin: 10px 0;
         border-top: 1px solid #ffffff;
         border-right: 1px solid #ffffff;
         border-bottom: 1px solid #ffffff; }
+        @media screen and (max-width: 1024px) {
+          .pricing__content__item:last-child {
+            border: 1px solid #ffffff; } }
       .pricing__content__item__title {
         text-transform: uppercase;
         letter-spacing: 0.125em;
         text-align: center;
         color: #ffffff;
         margin: 2em 0; }
+        @media screen and (max-width: 480px) {
+          .pricing__content__item__title {
+            font-size: 0.75em; } }
       .pricing__content__item__price {
         color: #ffffff;
         margin: 0;
@@ -735,6 +760,9 @@ a {
         justify-content: center;
         align-items: flex-end;
         position: relative; }
+        @media screen and (max-width: 480px) {
+          .pricing__content__item__price {
+            height: 50px; } }
         .pricing__content__item__price__dollar {
           margin: 0 0.5em;
           font-size: 1em;
@@ -744,6 +772,9 @@ a {
           margin: 0;
           font-size: 8em;
           line-height: 0.8em; }
+          @media screen and (max-width: 480px) {
+            .pricing__content__item__price__numbers {
+              font-size: 4em; } }
         .pricing__content__item__price__comment {
           display: flex;
           align-items: flex-end;
@@ -757,19 +788,31 @@ a {
         margin: 2em 0 1em;
         font-size: 1em;
         line-height: 1.5em; }
+        @media screen and (max-width: 480px) {
+          .pricing__content__item__destination {
+            font-size: 0.75em; } }
       .pricing__content__item__flight_time {
         text-align: center;
         color: #ffffff; }
+        @media screen and (max-width: 480px) {
+          .pricing__content__item__flight_time {
+            font-size: 0.75em; } }
       .pricing__content__item__notice {
         text-align: center;
         color: #ffffff;
         font-style: italic;
         font-size: 0.75em;
         margin: 0 0 4em; }
+        @media screen and (max-width: 480px) {
+          .pricing__content__item__notice {
+            font-size: 0.75em; } }
   .pricing__notice {
     margin: 30px 0;
     text-align: center;
     color: #ffffff; }
+    @media screen and (max-width: 480px) {
+      .pricing__notice {
+        font-size: 0.75em; } }
     .pricing__notice a {
       text-decoration: none;
       color: #ffffff;
@@ -785,3 +828,6 @@ footer {
     text-align: center;
     letter-spacing: 2px;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.16); }
+    @media screen and (max-width: 480px) {
+      footer p {
+        font-size: 0.75em; } }

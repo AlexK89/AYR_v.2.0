@@ -275,6 +275,14 @@ a {
 		margin-bottom: 0;
 		text-align: center;
 		text-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
+
+		@media screen and (max-width: 928px) {
+			font-size: 2em;
+		}
+
+		@media screen and (max-width: 768px) {
+			font-size: 1.6em;
+		}
 	}
 
 	&__sub-title {
@@ -284,6 +292,10 @@ a {
 		text-align: center;
 		font-style: italic;
 		text-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
+
+		@media screen and (max-width: 768px) {
+			font-size: 0.8em;
+		}
 	}
 
 	&__form {
@@ -294,10 +306,12 @@ a {
 		&__title {
 			color: #ffffff;
 			font-weight: bold;
+			text-align: center;
 		}
 
 		input {
-			width: 400px;
+			max-width: 400px;
+			width: 90%;
 			height: 50px;
 			margin: 10px 0;
 			border: none;
@@ -308,7 +322,8 @@ a {
 		}
 
 		button {
-			width: 400px;
+			max-width: 400px;
+			width: 90%;
 			height: 50px;
 			margin: 10px 0;
 			border: none;
@@ -327,6 +342,7 @@ a {
 		&__notice {
 			color: #ffffff;
 			font-size: 0.75em;
+			text-align: center;
 		}
 	}
 
@@ -402,6 +418,10 @@ a {
 		align-items: flex-start;
 		padding: 0 3em;
 
+		@media screen and (max-width: 768px) {
+			order: 2;
+		}
+
 		@media screen and (max-width: 480px) {
 			height: auto;
 			max-width: 100%;
@@ -429,10 +449,15 @@ a {
 			}
 		}
 	}
+
 	.our_app {
 		display: flex;
 		justify-content: center;
 		position: relative;
+
+		@media screen and (max-width: 768px) {
+			order: 1;
+		}
 
 		@media screen and (max-width: 480px) {
 			width: auto;
@@ -818,6 +843,7 @@ a {
 	padding: 50px 5%;
 	background: url("../images/pricing_background.jpg") no-repeat center center;
 	background-size: cover;
+	overflow: hidden;
 
 	&__title {
 		text-align: center;

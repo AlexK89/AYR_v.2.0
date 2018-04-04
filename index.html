@@ -235,9 +235,11 @@
 	<p class="extra-form__sub-title">
 		Sign up for updates and super special exclusive offers!
 	</p>
-	<form action="#" class="extra-form__form">
-		<input type="text" placeholder="Name">
-		<input type="email" placeholder="Email Address">
+	<form action="https://formspree.io/info@flyayr.com" method="POST" class="extra-form__form">
+		<input type="text" placeholder="Name" name="client name" required>
+		<input type="email" placeholder="Email Address" name="_replyto" required>
+		<input type="hidden" name="_subject" value="New submission!" />
+		<input type="text" name="_gotcha" style="display:none" />
 		<button type="submit">Sign Up</button>
 	</form>
 	<p class="extra-form__notice">

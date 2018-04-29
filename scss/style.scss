@@ -962,6 +962,10 @@ a {
 				padding: 0 15px;
 				transition: .3s;
 
+				@media screen and (max-width: 1024px) {
+					opacity: 1;
+				}
+
 				&__title {
 					font-size: 1.25em;
 					text-align: center;
@@ -987,7 +991,7 @@ a {
 //Pricing
 //================================
 .pricing {
-	padding: 50px 5%;
+	padding: 140px 5%;
 	background: url("../images/pricing_background.jpg") no-repeat center center;
 	background-size: cover;
 	overflow: hidden;
@@ -1005,6 +1009,8 @@ a {
 	&__content {
 		display: flex;
 		justify-content: center;
+		max-width: 90%;
+		margin: 0 auto;
 
 		@media screen and (max-width: 1024px) {
 			flex-direction: column;
@@ -1013,6 +1019,7 @@ a {
 
 		&__item {
 			width: 400px;
+			padding: 1em;
 
 			@media screen and (max-width: 1024px) {
 				border: 1px solid #ffffff;
@@ -1124,17 +1131,6 @@ a {
 					font-size: 0.75em;
 				}
 			}
-			&__notice {
-				text-align: center;
-				color: #ffffff;
-				font-style: italic;
-				font-size: 0.75em;
-				margin: 0 0 4em;
-
-				@media screen and (max-width: 480px) {
-					font-size: 0.75em;
-				}
-			}
 		}
 	}
 
@@ -1151,6 +1147,18 @@ a {
 			text-decoration: none;
 			color: #ffffff;
 			font-weight: bold;
+		}
+	}
+
+	&__extra-notice {
+		text-align: center;
+		color: #ffffff;
+		font-style: italic;
+		font-size: 0.75em;
+		margin: 2em 0 0;
+
+		@media screen and (max-width: 480px) {
+			font-size: 0.75em;
 		}
 	}
 }
